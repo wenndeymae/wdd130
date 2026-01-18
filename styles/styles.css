@@ -1,7 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --heading-background-color: darkblue;
     --all-text-align: center;
-    --all-border: black;
+    --all-border-color: black;
 }
 
 nav {
@@ -17,18 +23,22 @@ nav a {
 
 h1 {
     color: var(--heading-background-color);
+    padding: 1rem;
 }
 
 main img {
+    /* you most likely will have other CSS declarations here */
+    float: right;
     width: 150px;
     height: auto;
-    border: 1px solid var(--all-border);
+    border: 1px solid var(--all-border-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
-    padding: 0;
+    padding: 1rem;
 }
 
 main {
@@ -43,6 +53,7 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: var(--all-text-align);
+    position: relative;
 }
 
 aside img {
@@ -50,8 +61,27 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: center;
+    left: 40;
+}
+
 footer {
     margin-top: 15px;
-    border-top: 1px solid var(--all-border);
+    border-top: 1px solid var(--all-border-color);
     text-align: var(--all-text-align);
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: var(--all-border-color);
+}
+
+.indent {
+    padding-left: 2rem;
 }
