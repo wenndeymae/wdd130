@@ -1,15 +1,15 @@
 :root {
-    --primary-color: #055a05;
-    --secondary-color: #f4a261;
+    --primary-color: #fff;
+    --secondary-color: #000;
     --accent1-color: #264653;
-    --accent2-color: #e9c46a;
+    --accent2-color: #dcdcdc;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
 header {
-    background-color: white;
-    color: black;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 * {
@@ -33,7 +33,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: white;
+    color: var(--accent2-color);
     text-align: center;
 }
 
@@ -83,7 +83,7 @@ section {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--accent2-color);
     /* white text - make sure there is enough contrast with the background-color */
 }
 
