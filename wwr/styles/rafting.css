@@ -37,22 +37,18 @@ footer {
     margin: 0 auto;
 }
 
-h2 {
-    font-family: var(--heading-font);
-    color: var(--accent2-color);
-    text-align: center;
-}
-
 h1 {
-    background-color: var(--accent2-color);
-    color: var(--secondary-color);
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
     margin-top: 1rem;
     text-align: center;
 }
 
 h2 {
-    background-color: var(--accent1-color);
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
     text-align: center;
+    background-color: var(--accent1-color);
     padding: 8px;
     width: 100%;
 }
@@ -138,7 +134,7 @@ section {
     padding: 16px;
     gap: 20px;
 
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: var(--primary-color);
 }
 
 .hero article img {
@@ -305,7 +301,6 @@ footer {
   font-size: 1rem;
   cursor: pointer;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
