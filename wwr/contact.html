@@ -35,36 +35,26 @@
         <section class="contact-form">
             <form>
                 <div form="item-column2">
-                    <label for="username">Name:</label>
+                    <label for="username">Name: </label>
                     <input type="text" id="username" name="username" required>
                 </div>
                 <div form="item-column2">
-                    <label for="email">Email Address</label>
+                    <label for="email">Email: </label>
                     <input type="text" id="email" name="email" required>
                 </div>
                 <fieldset>
                     <legend>Purpose of Message</legend>
 
-                    <label>
-                        <input type="radio" name="purpose" value="general" required>
-                        General Enquiry
-                    </label>
-                    <label>
-                        <input type="radio" name="purposse" value="reservation">
-                        Reservation Question
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="website">
-                        Website Suggestion
-                    </label>
+                    <label><input type="radio" name="purpose" value="general" required> General Enquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
                 </fieldset>
                 <div class="form-item">
                     <label for="message">Message:</label>
                     <textarea name="message" id="message" rows="4"></textarea>
                 </div>
                 <div class="form-item checkbox">
-                    <label for="checkbox" name="subscribe"></label>
-                    Please subscribe me to the monthly newsletter
+                    <label><input type="checkbox" id="subscribe" name="subscribe">Please subscribe me to the monthly newsletter</input></label>
                 </div>
                     <button type="submit">Send Message</button>
             </form>
@@ -74,16 +64,19 @@
 
             <div class="employees-grid">
                 <figure>
-                    <img src="images/rg.jpg" alt="River Guide">
-                    <figcaption>Alen Gomez — Lead River Guide</figcaption>
+                    <img src="images/rg.jpg" alt="River Guide" width="150">
+                    <figcaption>Alen Gomez</figcaption>
+                    <figcaption>Lead River Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/om.jpg" alt="Operations Manager">
-                    <figcaption>Laurenze Navarro — Operations Manager</figcaption>
+                    <img src="images/om.jpg" alt="Operations Manager" width="150">
+                    <figcaption>Laurenze Navarro</figcaption>
+                    <figcaption>Operations Manager</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/cs.jpg" alt="Customer Support">
-                    <figcaption>Shai Lim — Customer Support</figcaption>
+                    <img src="images/cs.jpg" alt="Customer Support" width="150">
+                    <figcaption>Shai Lim</figcaption>
+                    <figcaption>Customer Support</figcaption>
                 </figure>
             </div>
         </section>
