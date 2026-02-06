@@ -37,14 +37,16 @@ footer {
     margin: 0 auto;
 }
 
-footer {
-    background-color: var(--accent2-color);
-}
-
-h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--accent2-color);
+    text-align: center;
+}
+
+h1 {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    margin-top: 1rem;
     text-align: center;
 }
 
@@ -174,7 +176,7 @@ section {
 }
 
 figure img {
-    width: none;
+    width: auto;
     height: 90%;
 }
 
@@ -203,6 +205,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr auto;
     text-align: center;
+    background-color: var(--accent2-color);
 }
 
 .contact-info h2 {
@@ -222,7 +225,7 @@ footer {
   position: absolute;
   width: 25%;
   height: 380px;
-  border: none;
+  border: 0;
   margin-top: 2rem;
 }
 
