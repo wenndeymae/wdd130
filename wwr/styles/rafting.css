@@ -99,6 +99,12 @@ section {
     position: relative;
     max-width: 1100px;
     margin: 40px auto;
+
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 4rem 2rem;
 }
 
 .hero img {
@@ -119,7 +125,8 @@ section {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: var(--accent2-color);
-    /* white text - make sure there is enough contrast with the background-color */
+
+    font-size: 3rem;
 }
 
 .hero article {
@@ -328,4 +335,65 @@ fieldset label {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 12px 24px;
+  background-color: #0077b6;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+ }
+
+.cta-button:hover {
+  background-color: #023e8a;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.trip-card {
+  border: 1px solid var(--accent2-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.trip-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.trip-card div {
+  padding: 1rem;
+}
+
+.trip-table-section {
+  padding: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid var(--accent2-color);
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #0077b6;
+  color: var(--primary-color);
 }
